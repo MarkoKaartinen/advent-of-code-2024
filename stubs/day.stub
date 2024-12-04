@@ -1,0 +1,26 @@
+<?php
+namespace App\Days;
+
+use App\Helpers\DayConstructor;
+use App\Interfaces\DayInterface;
+use Illuminate\Support\Collection;
+
+class Day$NUMBER$ implements DayInterface
+{
+    public Collection $stuff;
+
+    public function __construct($stuff = null)
+    {
+        $this->stuff = DayConstructor::construct($stuff, $NUMBER$);
+    }
+
+    public function part1(): int
+    {
+        return 0;
+    }
+
+    public function part2(): int
+    {
+        return 0;
+    }
+}

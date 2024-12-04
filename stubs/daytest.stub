@@ -1,0 +1,17 @@
+<?php
+use App\Days\Day$NUMBER$;
+
+beforeEach(function (){
+    $this->input = '';
+    $this->day = new Day$NUMBER$(collect(Str::of($this->input)->explode("\n")));
+});
+
+test('Part 1', function (){
+    $this->markTestSkipped();
+    $this->assertEquals(1, $this->day->part1());
+});
+
+test('Part 2', function (){
+    $this->markTestSkipped();
+    $this->assertEquals(2, $this->day->part2());
+});
